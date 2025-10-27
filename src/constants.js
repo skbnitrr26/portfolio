@@ -68,6 +68,8 @@ import vehiqlLogo from "./assets/work_logo/vehiql.png";
 import foodLogo from "./assets/work_logo/food.png";
 import quizLogo from "./assets/work_logo/quiz.png";
 import wtLogo from "./assets/work_logo/w_analyzer.png";
+import riceImg from "./assets/work_logo/rice.png";
+import gameImg from "./assets/work_logo/game-matcher.png";
 import webverLogo from "./assets/work_logo/web_dig.png";
 import cmLogo from "./assets/work_logo/cm.png";
 import imagesearchLogo from "./assets/work_logo/image_search.png";
@@ -260,6 +262,16 @@ export const projects = [
   },
   {
     id: 1,
+    title: "Fair-Rice Portal",
+    description:
+      "Developed a public rice distribution in rural villages.Implemented a dual-interface system: a public portal for villagers to submit rice records, calculate their official entitlement in real-time, and file grievances with photo uploads.Built a secure, multi-tab admin dashboard featuring data visualization charts, date-filterable reports, and full CRUD (Create, Read, Update, Delete) management for public announcements and grievance resolutions.Integrated an AI-powered chatbot for instant multilingual (English/Hindi) answers and a secure Forgot Password system.Applied a scalable, component-based React architecture secured by a Spring Security backend with JWT token authentication.",
+    image: riceImg,
+    tags: ["SpringBoot", "Spring RestAPI", "Spring Security", "ReactJS", "MySQL", "Tailwind CSS"],
+    github: "https://github.com/skbnitrr26/fair-rice-portal",
+    webapp: "https://fair-rice-portal.vercel.app/",
+  },
+  {
+    id: 2,
     title: "Vehiql AI",
     description:
       "Built a full-stack AI-driven car marketplace where users can securely log in via Clerk Authentication to explore and book test drives.Implemented test drive scheduling with date and time selection, allowing users to easily reserve slots.Admin can Add new cars (upload only an image, while AI auto-fills details like price, brand, color, mileage, make, and name using the Gemini API), manage test drive requests with actions such as Pending, Confirmed, Canceled, or Completed ",
@@ -278,16 +290,7 @@ export const projects = [
     github: "https://github.com/skbnitrr26/vehiql",
     webapp: "https://vehiql-b5jrbbr0i-sumits-projects-aa481bf0.vercel.app",
   },
-  {
-    id: 2,
-    title: "Food Delivery Website",
-    description:
-      "Developed a responsive food delivery platform with a modern user interface built using ReactJS and Tailwind CSS, Implemented search functionality that allows users to find food items either by typing in the search input or selecting from specific food categories.Add food items to the cart, dynamically increase/decrease quantity, View real-time updates of cart items. Integrated Toastify notifications for smooth user interaction, displaying messages when items are added/removed from the cart.",
-    image: foodLogo,
-    tags: ["React JS", "HTML", "Tailwind CSS", "JavaScript", "MUI"],
-    github: "https://github.com/skbnitrr26/Food_Delivery_App-React-",
-    webapp: "https://food-delivery-app-sumit.vercel.app/",
-  },
+  
   {
     id: 3,
     title: "Whatsapp Analyzer",
@@ -308,5 +311,26 @@ export const projects = [
     github: "https://github.com/skbnitrr26/ssc-othergovt-quiz-exam",
     webapp: "https://ssc-othergovt-quiz-exam-sumitdevelop.streamlit.app/",
   },
+  {
+    id: 5,
+    title: "Memory Matcher Game",
+    description:
+      "Test your memory with this fun and engaging pair-matching game, uniquely personalized with your own family photos! Replace the standard icons with up to 20 different pictures of loved ones to create a special experience. Challenge yourself across four difficulty levels: Easy (6 pairs), Medium (10 pairs), Hard (15 pairs), and Expert (20 pairs). As you play, the game tracks your moves and elapsed time. Aim for the best score (lowest number of moves) for each difficulty – your high scores are automatically saved in your browser's local storage so you can try to beat them later!",
+    image: gameImg,
+    tags: ["HTML", "Tailwind CSS", "React", "React-Hook", "Use Effect"],
+    github: "https://github.com/skbnitrr26/memory-match-game",
+    webapp: "https://memory-match-game-sumit.vercel.app/",
+  },
+  {
+    id: 6,
+    title: "Food Delivery Website",
+    description:
+      "Developed a responsive food delivery platform with a modern user interface built using ReactJS and Tailwind CSS, Implemented search functionality that allows users to find food items either by typing in the search input or selecting from specific food categories.Add food items to the cart, dynamically increase/decrease quantity, View real-time updates of cart items. Integrated Toastify notifications for smooth user interaction, displaying messages when items are added/removed from the cart.",
+    image: foodLogo,
+    tags: ["React JS", "HTML", "Tailwind CSS", "JavaScript", "MUI"],
+    github: "https://github.com/skbnitrr26/Food_Delivery_App-React-",
+    webapp: "https://food-delivery-app-sumit.vercel.app/",
+  },
+  
   
 ];
